@@ -19,6 +19,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
         <activity
             android:name=".ActivityLoad"
             android:exported="true" >
