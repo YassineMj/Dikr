@@ -9,7 +9,7 @@
     android:background="@drawable/login">
 
     <EditText
-        android:id="@+id/TEXT1"
+        android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_marginStart="10dp"
@@ -19,7 +19,7 @@
         android:background="@drawable/edit_text_border"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:drawablePadding="10dp"
-        android:hint="@string/username"
+        android:hint="@string/Email"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:text=""
@@ -29,7 +29,7 @@
       />
 
     <EditText
-        android:id="@+id/TEXT2"
+        android:id="@+id/txt_password"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_margin="10dp"
@@ -57,7 +57,7 @@
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_login"
         android:layout_width="140dp"
         android:layout_height="70dp"
         android:layout_marginStart="130dp"
@@ -105,14 +105,14 @@
         >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/img_email"
             android:layout_width="100dp"
             android:layout_height="67dp"
             android:layout_marginStart="50dp"
             android:src="@drawable/mailyy" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/img_goodle"
             android:layout_width="123dp"
             android:layout_height="72dp"
             android:layout_marginTop="10dp"
@@ -120,7 +120,7 @@
             android:src="@drawable/ic_google" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/img_facebook"
             android:layout_width="100dp"
             android:layout_height="67dp"
             android:layout_margin="0dp"

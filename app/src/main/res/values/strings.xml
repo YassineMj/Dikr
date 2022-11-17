@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Dikr</string>
     <string name="username">UserName</string>
-    <string name="password">PassWord</string>
+    <string name="password">********</string>
     <string name="forgotpassword">Forgot password?</string>
+    <string name="Email">email@example.com</string>
+
 
 
 </resources>
