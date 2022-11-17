@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="258dp"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/edit_text_border"
@@ -26,7 +26,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/texthint"
         android:textSize="24dp"
-        />
+      />
 
     <EditText
         android:id="@+id/txt_password"
@@ -45,11 +45,11 @@
         android:textColor="@color/black"
         android:textColorHint="@color/texthint"
         android:textSize="24dp"
-        />
+       />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="188dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:text="@string/forgotpassword"
         android:layout_marginStart="242dp"
@@ -64,20 +64,21 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="#B1D8B7"
         android:textColor="@color/black"
-        android:textSize="19dp"
         android:textStyle="bold"
         android:drawableLeft="@drawable/loginebutton"
         android:text="LOGIN"
        />
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="300dp"
+        android:id="@+id/txt_inscription"
+        android:layout_width="225dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="118dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="132dp"
         android:text="Dont You Have an account ? "
         android:textColor="@color/black"
         android:layout_marginBottom="33dp"
+        android:textStyle="bold"
 
         />
     <TextView
