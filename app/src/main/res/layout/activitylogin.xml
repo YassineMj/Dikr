@@ -17,7 +17,7 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/edit_text_border"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawableLeft="@drawable/perssoneaccount"
         android:drawablePadding="10dp"
         android:hint="@string/Email"
         android:inputType="textPersonName"
@@ -26,7 +26,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/texthint"
         android:textSize="24dp"
-      />
+        />
 
     <EditText
         android:id="@+id/txt_password"
@@ -36,7 +36,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="9dp"
         android:background="@drawable/edit_text_border"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/lock"
         android:drawablePadding="10dp"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -45,7 +45,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/texthint"
         android:textSize="24dp"
-       />
+        />
 
     <TextView
         android:id="@+id/textView"
@@ -64,8 +64,9 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="#B1D8B7"
         android:textColor="@color/black"
+        android:textSize="19dp"
         android:textStyle="bold"
-        android:drawableLeft="@drawable/ic_baseline_login_24"
+        android:drawableLeft="@drawable/loginebutton"
         android:text="LOGIN"
        />
     <TextView
