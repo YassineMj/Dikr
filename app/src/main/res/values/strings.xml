@@ -4,6 +4,16 @@
     <string name="password">********</string>
     <string name="forgotpassword">Forgot password?</string>
     <string name="Email">email@example.com</string>
+    <string name="Number">email@example.com</string>
+    <string name="con_pass">confirmation password</string>
+    <string name="lastN">Last Name</string>
+    <string name="first">First Name</string>
+    <string name="number">Number</string>
+    <string name="country">Country</string>
+    <string name="save">Save</string>
+
+
+
 
 
 

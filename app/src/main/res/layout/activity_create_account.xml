@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundaccount">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activityCreateAccount"
+    android:orientation="vertical">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <EditText
+                     android:id="@+id/txt_first"
+                     android:layout_width="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="245dp"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:inputType="textPersonName"
+                     android:background="@drawable/edit_text_border"
+                     android:minHeight="48dp"
+                     android:padding="11dp"
+                     android:hint="@string/first"
+                     android:text="" />
+
+                 <EditText
+                     android:id="@+id/txt_last"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="245dp"
+                     android:layout_marginEnd="15dp"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:inputType="textPersonName"
+                     android:background="@drawable/edit_text_border"
+                     android:hint="@string/lastN"
+                     android:drawablePadding="9dp"
+                     android:minHeight="48dp"
+                     android:padding="10dp"
+                     android:text="" />
+
+             </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_acc_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:hint="@string/Email"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="9dp"
+        android:background="@drawable/edit_text_border"
+        android:minHeight="48dp"
+        android:text="" />
+
+
+    <EditText
+        android:id="@+id/txt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_border"
+        android:minHeight="48dp"
+        android:hint="@string/number"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="9dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/txt_acc_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="9dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_border"
+        android:minHeight="48dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/txt_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:hint="@string/con_pass"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="9dp"
+        android:background="@drawable/edit_text_border"
+        android:minHeight="48dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="122dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#B1D8B7"
+        android:padding="13dp"
+        android:textSize="19dp"
+        android:drawableLeft="@drawable/ic_add"
+        android:text="@string/save"
+        />
+
+
+</LinearLayout>
+</ScrollView>
