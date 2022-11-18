@@ -8,7 +8,7 @@
     <string name="con_pass">confirmation password</string>
     <string name="lastN">Last Name</string>
     <string name="first">First Name</string>
-    <string name="number">Number</string>
+    <string name="number">Phone number</string>
     <string name="country">Country</string>
     <string name="save">Save</string>
 

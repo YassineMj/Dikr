@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Dikr"
         tools:targetApi="31">
         <activity
-            android:name=".activityCreateAccount"
+            android:name=".ActivityLoad"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".ActivityLogin"
             android:exported="false">
@@ -31,8 +32,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".ActivityLoad"
+            android:name=".ActivityCreateAccount"
             android:exported="false">
 
             <meta-data
