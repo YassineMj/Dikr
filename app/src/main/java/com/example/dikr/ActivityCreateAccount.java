@@ -15,6 +15,10 @@ public class ActivityCreateAccount extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        AccountCRUD acount=new AccountCRUD(this);
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
@@ -51,13 +55,20 @@ public class ActivityCreateAccount extends AppCompatActivity {
                                 Toast.makeText(ActivityCreateAccount.this," le mot de passe doit contenir au moins 8 caractères et au maximum 12 caractères ",Toast.LENGTH_LONG).show();
                             }
                             else {
-                                String fullPhoneNumber=(ccp.getSelectedCountryCode().toString()+txt_phone_number.getText().toString());
-                                Toast.makeText(ActivityCreateAccount.this,
-                                        "compte créé avec succes", Toast.LENGTH_LONG).show();
 
+                                String fullPhoneNumber=("+"+ccp.getSelectedCountryCode().toString()+txt_phone_number.getText().toString());
 
-                                Toast.makeText(ActivityCreateAccount.this,
-                                        "full phone number : "+fullPhoneNumber, Toast.LENGTH_LONG).show();
+                                boolean ajouter=acount.insertAccount(txt_first.getText().toString(),txt_last.getText().toString(),txt_acc_email.getText().toString(),fullPhoneNumber,txt_acc_password.getText().toString());
+                                if(ajouter==true){
+                                    Toast.makeText(ActivityCreateAccount.this,
+                                            "compte créé avec succes", Toast.LENGTH_LONG).show();
+                                    finish();
+                                }
+                                else {
+                                    Toast.makeText(ActivityCreateAccount.this,
+                                            "email deja exist", Toast.LENGTH_LONG).show();
+                                }
+
                             }
 
                         }

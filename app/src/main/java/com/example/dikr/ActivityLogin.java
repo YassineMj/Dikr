@@ -18,6 +18,10 @@ public class ActivityLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activitylogin);
 
+
+        AccountCRUD account=new AccountCRUD(this);
+        account.select();
+
         final Intent IntentCreateAccount=new Intent(this,ActivityCreateAccount.class);
 
 
@@ -35,8 +39,9 @@ public class ActivityLogin extends AppCompatActivity {
                             "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_LONG).show();
                 }
                 else{
-                    if(Patterns.EMAIL_ADDRESS.matcher(txt_email.getText().toString()).matches()){
+                    if(Patterns.EMAIL_ADDRESS.matcher(txt_email.getText().toString()).matches() && account.selectAccount(txt_email.getText().toString(),txt_password.getText().toString())==true){
                         Toast.makeText(ActivityLogin.this," Validated Successfully !",Toast.LENGTH_LONG).show();
+
                     }else {
                         Toast.makeText(ActivityLogin.this," Invalid Email",Toast.LENGTH_LONG).show();
                     }
