@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,6 +33,14 @@ public class ActivityLogin extends AppCompatActivity {
                 if(txt_email.getText().toString().equals("") || txt_password.getText().toString().equals("")){
                     Toast.makeText(ActivityLogin.this,
                             "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    if(Patterns.EMAIL_ADDRESS.matcher(txt_email.getText().toString()).matches()){
+                        Toast.makeText(ActivityLogin.this," Validated Successfully !",Toast.LENGTH_LONG).show();
+                    }else {
+                        Toast.makeText(ActivityLogin.this," Invalid Email",Toast.LENGTH_LONG).show();
+                    }
+
                 }
             }
         });

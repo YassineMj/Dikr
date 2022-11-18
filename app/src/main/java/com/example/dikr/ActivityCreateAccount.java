@@ -41,9 +41,11 @@ public class ActivityCreateAccount extends AppCompatActivity {
                                 "Erreur de validation de mot de passe", Toast.LENGTH_LONG).show();
                     }
                     else{
+
                         String fullPhoneNumber=(ccp.getSelectedCountryCode().toString()+txt_phone_number.getText().toString());
                         Toast.makeText(ActivityCreateAccount.this,
                                 "compte créé avec succes", Toast.LENGTH_LONG).show();
+
 
                         Toast.makeText(ActivityCreateAccount.this,
                                 "full phone number : "+fullPhoneNumber, Toast.LENGTH_LONG).show();

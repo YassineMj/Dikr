@@ -20,12 +20,13 @@
         android:drawableLeft="@drawable/perssoneaccount"
         android:drawablePadding="10dp"
         android:hint="@string/Email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:text=""
         android:textColor="@color/black"
         android:textColorHint="@color/texthint"
         android:textSize="24dp"
+
       />
 
     <EditText
@@ -93,6 +94,7 @@
         android:textStyle="bold"
         android:textSize="16dp"
         />
+
 
 
     <LinearLayout
