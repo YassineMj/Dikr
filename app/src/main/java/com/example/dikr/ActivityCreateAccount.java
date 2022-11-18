@@ -3,6 +3,7 @@ package com.example.dikr;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,18 +42,36 @@ public class ActivityCreateAccount extends AppCompatActivity {
                                 "Erreur de validation de mot de passe", Toast.LENGTH_LONG).show();
                     }
                     else{
+                        if((!Patterns.EMAIL_ADDRESS.matcher(txt_acc_email.getText().toString()).matches())){
+                            Toast.makeText(ActivityCreateAccount.this," Invalid Email",Toast.LENGTH_LONG).show();
+                        }
+                        else {
+                            if((validationPassword(txt_acc_password.getText().toString())==false))
+                            {
+                                Toast.makeText(ActivityCreateAccount.this," le mot de passe doit contenir au moins 8 caractères et au maximum 12 caractères ",Toast.LENGTH_LONG).show();
+                            }
+                            else {
+                                String fullPhoneNumber=(ccp.getSelectedCountryCode().toString()+txt_phone_number.getText().toString());
+                                Toast.makeText(ActivityCreateAccount.this,
+                                        "compte créé avec succes", Toast.LENGTH_LONG).show();
 
-                        String fullPhoneNumber=(ccp.getSelectedCountryCode().toString()+txt_phone_number.getText().toString());
-                        Toast.makeText(ActivityCreateAccount.this,
-                                "compte créé avec succes", Toast.LENGTH_LONG).show();
 
+                                Toast.makeText(ActivityCreateAccount.this,
+                                        "full phone number : "+fullPhoneNumber, Toast.LENGTH_LONG).show();
+                            }
 
-                        Toast.makeText(ActivityCreateAccount.this,
-                                "full phone number : "+fullPhoneNumber, Toast.LENGTH_LONG).show();
+                        }
+
                     }
                 }
             }
         });
+    }
 
+    public Boolean validationPassword(String password){
+        if(password.length()<8 || password.length() > 12){
+            return false;
+        }
+        return true;
     }
 }
