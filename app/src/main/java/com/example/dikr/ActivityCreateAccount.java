@@ -20,7 +20,7 @@ public class ActivityCreateAccount extends AppCompatActivity {
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_account);
+        setContentView(R.layout.activitycreateaccount);
 
         Button btn_save=findViewById(R.id.btn_save);
         CountryCodePicker ccp=findViewById(R.id.ccp);
@@ -43,7 +43,7 @@ public class ActivityCreateAccount extends AppCompatActivity {
                 else {
                     if(txt_acc_password.getText().toString().equals(txt_password_confirmation.getText().toString())!=true){
                         Toast.makeText(ActivityCreateAccount.this,
-                                "Erreur de validation de mot de passe", Toast.LENGTH_LONG).show();
+                                "Error de validation de mot de passe", Toast.LENGTH_LONG).show();
                     }
                     else{
                         if((!Patterns.EMAIL_ADDRESS.matcher(txt_acc_email.getText().toString()).matches())){
