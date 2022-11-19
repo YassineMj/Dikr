@@ -26,7 +26,6 @@ public class ActivityMenu extends AppCompatActivity {
         bnv_Main.add(new MeowBottomNavigation.Model(3,R.drawable.mosque));
         bnv_Main.add(new MeowBottomNavigation.Model(4,R.drawable.ic_manageaccounts));
         bnv_Main.add(new MeowBottomNavigation.Model(5,R.drawable.share));
-
         bnv_Main.show(1,true);
 
         replace(new HomeFragment());
@@ -54,8 +53,6 @@ public class ActivityMenu extends AppCompatActivity {
                     case 5:
                         replace(new ShareFragment());
                         break;
-
-
                 }
                 return null;
             }
