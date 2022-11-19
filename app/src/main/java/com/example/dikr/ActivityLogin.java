@@ -21,9 +21,10 @@ public class ActivityLogin extends AppCompatActivity {
 
         AccountCRUD account=new AccountCRUD(this);
 
-        //account.select();
+        account.select();
 
         final Intent IntentCreateAccount=new Intent(this,ActivityCreateAccount.class);
+        Intent IntentMenu = new Intent(this,ActivityMenu.class);
 
 
         EditText txt_email=findViewById(R.id.txt_email);
@@ -42,7 +43,7 @@ public class ActivityLogin extends AppCompatActivity {
                 else{
                     if(Patterns.EMAIL_ADDRESS.matcher(txt_email.getText().toString()).matches() && account.selectAccount(txt_email.getText().toString(),txt_password.getText().toString())==true){
                         Toast.makeText(ActivityLogin.this," Validated Successfully !",Toast.LENGTH_LONG).show();
-
+                        startActivity(IntentMenu);
                     }else {
                         Toast.makeText(ActivityLogin.this," Invalid Email",Toast.LENGTH_LONG).show();
                     }
