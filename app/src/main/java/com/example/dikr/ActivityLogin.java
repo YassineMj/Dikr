@@ -20,7 +20,8 @@ public class ActivityLogin extends AppCompatActivity {
 
 
         AccountCRUD account=new AccountCRUD(this);
-        account.select();
+
+        //account.select();
 
         final Intent IntentCreateAccount=new Intent(this,ActivityCreateAccount.class);
 

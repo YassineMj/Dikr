@@ -28,6 +28,9 @@ public class ActivityMenu extends AppCompatActivity {
         bnv_Main.add(new MeowBottomNavigation.Model(5,R.drawable.share));
 
         bnv_Main.show(1,true);
+
+        replace(new HomeFragment());
+
         bnv_Main.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
             public Unit invoke(MeowBottomNavigation.Model model) {
