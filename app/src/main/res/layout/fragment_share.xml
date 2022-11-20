@@ -40,13 +40,13 @@
         app:srcCompat="@drawable/whatssap" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtV_whatsapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="199dp"
-        android:text="Share with Whatssap"
+        android:text="Share with Whatsapp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         app:srcCompat="@drawable/copy" />
 
     <TextView
-        android:id="@+id/textVew3"
+        android:id="@+id/txtV_copylink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -90,7 +90,7 @@
         app:srcCompat="@drawable/img_facebook" />
 
     <TextView
-        android:id="@+id/textVew4"
+        android:id="@+id/txtV_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -115,7 +115,7 @@
         app:srcCompat="@drawable/twitter" />
 
     <TextView
-        android:id="@+id/textVew5"
+        android:id="@+id/txtV_twitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
