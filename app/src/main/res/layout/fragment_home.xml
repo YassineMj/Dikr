@@ -1,18 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/prayers_back"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/txt_city"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="247dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint=" Search for a City"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtV_country"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="100dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#B1D8B7"
+        android:text="Search"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_city"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="home"
-        android:textSize="24sp"
-        android:textColor="@color/colorBlack"/>
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="116dp"
+        android:text="Prayers"
+        android:textColor="@color/gradEnd"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtV_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/txtV_country"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginEnd="32dp"
+        android:padding="21dp"
+        android:text="France"
+        android:textColor="@color/yellow2"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_city" />
+
+    <TextView
+        android:id="@+id/txtV_state"
+        android:layout_width="251dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="44dp"
+        android:padding="21dp"
+        android:text="AZIe_DE_France"
+        android:textColor="@color/yellow2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_country" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="59dp"
+        android:text="2022-11-07"
+        android:textColor="@color/yellow2"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_state" />
+
+    <TextView
+        android:id="@+id/txtV_fajr"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="34dp"
+        android:padding="21dp"
+        android:text="12:22"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/txtV_duhr"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_marginStart="285dp"
+        android:layout_marginEnd="44dp"
+        android:padding="21dp"
+        android:text="3:19"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_fajr" />
+
+    <TextView
+        android:id="@+id/txtV_asr"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:layout_marginStart="285dp"
+        android:layout_marginEnd="44dp"
+        android:padding="21dp"
+        android:text="9:29"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_duhr" />
+
+    <TextView
+        android:id="@+id/txtV_maghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="72sp"
+        android:layout_marginStart="285dp"
+        android:layout_marginEnd="44dp"
+        android:padding="21dp"
+        android:text="2:13"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_asr" />
+
+    <TextView
+        android:id="@+id/txtV_isha"
+        android:layout_width="wrap_content"
+        android:layout_height="69sp"
+        android:layout_marginStart="285dp"
+        android:layout_marginEnd="44dp"
+        android:padding="21dp"
+        android:text="3:22"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_maghrib" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
