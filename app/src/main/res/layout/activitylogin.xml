@@ -9,7 +9,7 @@
     android:background="@drawable/login">
 
     <EditText
-        android:id="@+id/txt_email"
+        android:id="@+id/txt_first"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_marginStart="10dp"
@@ -45,7 +45,7 @@
         android:text=""
         android:textColor="@color/black"
         android:textColorHint="@color/texthint"
-        android:textSize="24dp"
+        android:textSize="20dp"
        />
 
     <TextView
@@ -58,7 +58,7 @@
         android:textSize="19dp"/>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_update"
         android:layout_width="140dp"
         android:layout_height="70dp"
         android:layout_marginStart="130dp"

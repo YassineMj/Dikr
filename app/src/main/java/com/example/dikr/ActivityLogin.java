@@ -27,11 +27,11 @@ public class ActivityLogin extends AppCompatActivity {
         Intent IntentMenu = new Intent(this,ActivityMenu.class);
 
 
-        EditText txt_email=findViewById(R.id.txt_email);
+        EditText txt_email=findViewById(R.id.txt_first);
         EditText txt_password=findViewById(R.id.txt_password);
 
         TextView txt_incription=findViewById(R.id.txt_inscription);
-        Button btn_login=findViewById(R.id.btn_login);
+        Button btn_login=findViewById(R.id.btn_update);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
