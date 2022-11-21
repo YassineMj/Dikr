@@ -50,11 +50,12 @@ public class ActivityMenu extends AppCompatActivity {
 
                     case 4:
                         replace(new ProfileFragment());
+                        bnv_Main.setBackgroundResource(R.color.grey);
                         break;
 
                     case 5:
                         replace(new ShareFragment());
-                        bnv_Main.setBackgroundResource(R.color.white);
+                        bnv_Main.setBackgroundResource(R.color.grey);
                         break;
                 }
                 return null;
