@@ -79,7 +79,7 @@ public class ShareFragment extends Fragment {
                 IntentWhatsapp.setAction(Intent.ACTION_SEND);
                 IntentWhatsapp.setType("text/plain");
                 IntentWhatsapp.putExtra(Intent.EXTRA_TEXT,"Download. \n\nhttps://www.whatsapp.com/?lang=en");
-                startActivity(Intent.createChooser(IntentWhatsapp,"whatsapp"));
+                startActivity(Intent.createChooser(IntentWhatsapp,"WhatsApp"));
             }
         });
 
@@ -103,7 +103,19 @@ public class ShareFragment extends Fragment {
                 Intentfacebook.setAction(Intent.ACTION_SEND);
                 Intentfacebook.setType("text/plain");
                 Intentfacebook.putExtra(Intent.EXTRA_TEXT,"Download. \n\nhttps://www.whatsapp.com/?lang=en");
-                startActivity(Intent.createChooser(Intentfacebook,"facebook"));
+                startActivity(Intent.createChooser(Intentfacebook,"Facebook"));
+            }
+        });
+
+        txtV_twitter=v.findViewById(R.id.txtV_twitter);
+        txtV_twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intenttwitter=new Intent();
+                Intenttwitter.setAction(Intent.ACTION_SEND);
+                Intenttwitter.setType("text/plain");
+                Intenttwitter.putExtra(Intent.EXTRA_TEXT,"Download. \n\nhttps://www.whatsapp.com/?lang=en");
+                startActivity(Intent.createChooser(Intenttwitter,"Twitter"));
             }
         });
 

@@ -9,7 +9,7 @@
     android:background="@drawable/login">
 
     <EditText
-        android:id="@+id/txt_first"
+        android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_marginStart="10dp"
