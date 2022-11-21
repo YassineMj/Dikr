@@ -95,6 +95,18 @@ public class ShareFragment extends Fragment {
             }
         });
 
+        txtV_facebook=v.findViewById(R.id.txtV_facebook);
+        txtV_facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intentfacebook=new Intent();
+                Intentfacebook.setAction(Intent.ACTION_SEND);
+                Intentfacebook.setType("text/plain");
+                Intentfacebook.putExtra(Intent.EXTRA_TEXT,"Download. \n\nhttps://www.whatsapp.com/?lang=en");
+                startActivity(Intent.createChooser(Intentfacebook,"facebook"));
+            }
+        });
+
         return v;
     }
 }
