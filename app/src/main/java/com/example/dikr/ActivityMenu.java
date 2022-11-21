@@ -36,6 +36,8 @@ public class ActivityMenu extends AppCompatActivity {
                 switch (model.getId()){
                     case 1:
                         replace(new HomeFragment());
+                        bnv_Main.setBackgroundResource(R.color.black);
+
                         break;
 
                     case 2:
@@ -52,6 +54,7 @@ public class ActivityMenu extends AppCompatActivity {
 
                     case 5:
                         replace(new ShareFragment());
+                        bnv_Main.setBackgroundResource(R.color.white);
                         break;
                 }
                 return null;
