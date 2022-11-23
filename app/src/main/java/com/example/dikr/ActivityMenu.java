@@ -37,7 +37,6 @@ public class ActivityMenu extends AppCompatActivity {
                     case 1:
                         replace(new HomeFragment());
                         bnv_Main.setBackgroundResource(R.color.black);
-
                         break;
 
                     case 2:
@@ -46,6 +45,7 @@ public class ActivityMenu extends AppCompatActivity {
 
                     case 3:
                         replace(new QuranFragment());
+                        bnv_Main.setBackgroundResource(R.color.black);
                         break;
 
                     case 4:
