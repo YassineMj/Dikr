@@ -50,10 +50,7 @@ public class ActivityLogin extends AppCompatActivity {
                         startActivity(IntentMenu);
                     }else {
                         Toast.makeText(ActivityLogin.this," Invalid Email",Toast.LENGTH_LONG).show();
-                    }
-
-                }
-            }
+                    }}}
         });
 
         txt_incription.setOnClickListener(new View.OnClickListener() {

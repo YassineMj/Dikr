@@ -63,7 +63,6 @@ public class HomeFragment extends Fragment {
 
     Button btn_search;
     EditText txt_city;
-
     TextView txtV_fajr;
     TextView txtV_duhr;
     TextView txtV_asr;
@@ -109,8 +108,6 @@ public class HomeFragment extends Fragment {
                         txtV_country.setText(response.getString("country"));
                         txtV_state.setText(response.getString("state"));
                         txtV_nameCity.setText(response.getString("query"));
-
-
                     }
                     else {
                         txtV_fajr.setText(null);
@@ -124,12 +121,10 @@ public class HomeFragment extends Fragment {
                         txtV_state.setText(null);
                         txtV_nameCity.setText(null);
 
-
                         Toast.makeText(getContext(),
                                 "nom de ville introuvable !!", Toast.LENGTH_LONG).show();
 
                     }
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -168,14 +163,12 @@ public class HomeFragment extends Fragment {
                 txtV_country = v.findViewById(R.id.txtV_country);
                 txtV_state = v.findViewById(R.id.txtV_state);
                 txtV_nameCity=v.findViewById(R.id.txtV_nameCity);
-
                 if (txt_city.getText().equals(null)) {
                     Toast.makeText(getContext(),
                             "insere la ville !! ", Toast.LENGTH_LONG).show();
                 } else {
                     loadData();
                 }
-
             }
         });
         return v;
