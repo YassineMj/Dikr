@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/ayatkursi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/Souratikhlas" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/Souratalfalak" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/Souratnass" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/masaeone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/two" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/three" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/masaetwo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/masaethree" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/six" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/seven" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/masaefour" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/ten" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/eleven" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/twelve" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/thirteen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/fourteen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/sixten" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/seventeen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/eighteen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/nineteen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_borderyellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txt_sabah_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="25dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/YELL"
+                        android:text="@string/twentyone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zoom_plus" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:src="@drawable/zoom_minuse"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

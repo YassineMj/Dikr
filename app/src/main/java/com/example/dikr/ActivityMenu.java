@@ -41,6 +41,7 @@ public class ActivityMenu extends AppCompatActivity {
 
                     case 2:
                         replace(new MosqueFragment());
+                        bnv_Main.setBackgroundResource(R.color.black);
                         break;
 
                     case 3:
