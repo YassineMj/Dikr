@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.AudioAttributes;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -22,6 +23,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,9 +85,24 @@ public class ActivityAyahs extends AppCompatActivity {
         int index = Integer.parseInt(itemSurah.get("itemSurah").toString());
 
         JSONArray ayahs= null;
+
+        JSONArray Data=null;
         try {
             ayahs = GlobalDeclaration.data.getJSONArray("surahs").getJSONObject(index).getJSONArray("ayahs");
+
+            ////
+            InputStream is =getAssets().open("QuranEnglish.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            String json = new String(buffer);
+            Data = new JSONObject(json).getJSONObject("data").getJSONArray("surahs").getJSONObject(index).getJSONArray("ayahs");
+            /////
+
         } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -99,7 +116,8 @@ public class ActivityAyahs extends AppCompatActivity {
                         Integer.parseInt(ayahs.getJSONObject(i).get("manzil").toString()),
                         Integer.parseInt(ayahs.getJSONObject(i).get("page").toString()),
                         Integer.parseInt(ayahs.getJSONObject(i).get("ruku").toString()),
-                        Integer.parseInt(ayahs.getJSONObject(i).get("hizbQuarter").toString()));
+                        Integer.parseInt(ayahs.getJSONObject(i).get("hizbQuarter").toString()),
+                        Data.getJSONObject(i).get("text").toString());
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -115,11 +133,13 @@ public class ActivityAyahs extends AppCompatActivity {
             }
         });
     }
+    MediaPlayer mediaPlayer = new MediaPlayer();
 
     public void audio(int indexAyah){
+        mediaPlayer.stop();
+        mediaPlayer = new MediaPlayer();
         Ayah o=ayahsList.get(indexAyah);
         String url = o.audioAyah;
-        MediaPlayer mediaPlayer = new MediaPlayer();
         mediaPlayer.setAudioAttributes(
                 new AudioAttributes.Builder()
                         .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)

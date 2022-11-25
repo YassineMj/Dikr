@@ -140,6 +140,8 @@ public class QuranFragment extends Fragment {
 
             RequestQueue requestQueue = Volley.newRequestQueue(getContext());
             requestQueue.add(jsonObjectRequest);
+
+            
             Toast.makeText(getContext(),
                     "Load ...", Toast.LENGTH_LONG).show();
         return v;

@@ -35,6 +35,7 @@ public class AyahAdapter extends ArrayAdapter {
         TextView txtV_page=(TextView) convertView.findViewById(R.id.txtV_page);
         TextView txtV_ruku=(TextView) convertView.findViewById(R.id.txtV_ruku);
         TextView txtV_hizb=(TextView) convertView.findViewById(R.id.txtV_hizb);
+        TextView txtV_ayahEnglish=(TextView) convertView.findViewById(R.id.txtV_ayaEnglish);
 
 
         txtV_numAyah.setText(Integer.toString(ayah.numAyah));
@@ -44,6 +45,7 @@ public class AyahAdapter extends ArrayAdapter {
         txtV_page.setText(Integer.toString(ayah.page));
         txtV_ruku.setText(Integer.toString(ayah.ruku));
         txtV_hizb.setText(Integer.toString(ayah.hizb));
+        txtV_ayahEnglish.setText(ayah.textAyahEnglish);
 
         return convertView;
     }
