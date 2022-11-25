@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -82,58 +83,65 @@ public class QuranFragment extends Fragment {
         View v= inflater.inflate(R.layout.fragment_quran, container, false);
 
         listV_surahs=v.findViewById(R.id.listV_surahs);
-
         //Load Quran
-        List<Surah> surahsList=new ArrayList<Surah>();
-        SurahAdapter adapter=new SurahAdapter(getContext(),R.layout.itemsurah,surahsList);
+        SurahAdapter adapter=new SurahAdapter(getContext(),R.layout.itemsurah,GlobalDeclaration.surahsList);
 
+        //
         String url="https://api.alquran.cloud/v1/quran/ar.alafasy";
         JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                try {
-                    JSONObject data=response.getJSONObject("data");
-                    JSONArray surahs=data.getJSONArray("surahs");
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        if(GlobalDeclaration.surahsList.size()==0)
+                        {
+                            GlobalDeclaration.data=response.getJSONObject("data");
+                            JSONArray surahs=GlobalDeclaration.data.getJSONArray("surahs");
 
-                    for(int i=0;i<114;i++){
-                        int ayahs=surahs.getJSONObject(i).getJSONArray("ayahs").length();
+                            for(int i=0;i<114;i++){
+                                int ayahs=surahs.getJSONObject(i).getJSONArray("ayahs").length();
 
-                        Surah o=new Surah(Integer.parseInt(surahs.getJSONObject(i).getString("number")),
-                                                           ayahs,
-                                                           surahs.getJSONObject(i).getString("name"),
-                                                           surahs.getJSONObject(i).getString("englishName"),
-                                                           surahs.getJSONObject(i).getString("revelationType"));
+                                Surah o=new Surah(Integer.parseInt(surahs.getJSONObject(i).getString("number")),
+                                        ayahs,
+                                        surahs.getJSONObject(i).getString("name"),
+                                        surahs.getJSONObject(i).getString("englishName"),
+                                        surahs.getJSONObject(i).getString("revelationType"));
 
 
-                        surahsList.add(o);
+                                GlobalDeclaration.surahsList.add(o);
+                            }
+                            listV_surahs.setAdapter(adapter);
+                        }else {
+                            listV_surahs.setAdapter(adapter);
+                        }
+
+
+                    }catch (JSONException e) {
+                        e.printStackTrace();
                     }
-
-                    listV_surahs.setAdapter(adapter);
-
-                }catch (JSONException e) {
-                    e.printStackTrace();
                 }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                System.out.println(error);
-            }
-        });
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    System.out.println(error);
+                }
+            });
+            //
 
-        //ItemClick
-        listV_surahs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intentAyahs=new Intent(getContext(), ActivityAyahs.class);
-                intentAyahs.putExtra("itemSurah",i);
-                startActivity(intentAyahs);
-            }
-        });
 
-        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
-        requestQueue.add(jsonObjectRequest);
+            //ItemClick
+            listV_surahs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    Intent intentAyahs=new Intent(getContext(), ActivityAyahs.class);
+                    intentAyahs.putExtra("itemSurah",i);
+                    startActivity(intentAyahs);
+                }
+            });
 
+            RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+            requestQueue.add(jsonObjectRequest);
+            Toast.makeText(getContext(),
+                    "Load ...", Toast.LENGTH_LONG).show();
         return v;
     }
 }
