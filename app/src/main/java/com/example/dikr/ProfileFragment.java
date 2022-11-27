@@ -94,17 +94,17 @@ public class ProfileFragment extends Fragment {
                    || txt_password.getText().toString().equals("")) {
 
                     Toast.makeText(getContext(),
-                            "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_LONG).show();
+                            "please fill all required fields", Toast.LENGTH_LONG).show();
                 }
                 else {
                     AccountCRUD accountUpdate=new AccountCRUD(getContext());
 
                     if(txt_password.length()<8 || txt_password.length()>12){
-                        Toast.makeText(getContext()," le mot de passe doit contenir au moins 8 caractères et au maximum 12 caractères ",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext()," the password must contain at least 8 characters and at most 12 characters ",Toast.LENGTH_LONG).show();
                     }
                     else {
                         if (accountUpdate.updateAccount(txt_first.getText().toString(),txt_last.getText().toString(),txt_email.getText().toString(),txt_phone.getText().toString(),txt_password.getText().toString(),Integer.parseInt(infoAccount[5]))==true && Patterns.EMAIL_ADDRESS.matcher(txt_email.getText().toString()).matches() ){
-                            Toast.makeText(getContext(), "succes", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(), "edit successfully\n", Toast.LENGTH_LONG).show();
                             getActivity().finish();
                         }
                         else {

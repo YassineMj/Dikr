@@ -122,7 +122,7 @@ public class HomeFragment extends Fragment {
                         txtV_nameCity.setText(null);
 
                         Toast.makeText(getContext(),
-                                "nom de ville introuvable !!", Toast.LENGTH_LONG).show();
+                                "city name not found !!\n", Toast.LENGTH_LONG).show();
 
                     }
                 } catch (JSONException e) {
@@ -133,7 +133,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getContext(),
-                        "error connection", Toast.LENGTH_LONG).show();
+                        "connection error !!", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -165,7 +165,7 @@ public class HomeFragment extends Fragment {
                 txtV_nameCity=v.findViewById(R.id.txtV_nameCity);
                 if (txt_city.getText().equals(null)) {
                     Toast.makeText(getContext(),
-                            "insere la ville !! ", Toast.LENGTH_LONG).show();
+                            "insert city name  !!", Toast.LENGTH_LONG).show();
                 } else {
                     loadData();
                 }

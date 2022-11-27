@@ -11,6 +11,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 public class ActivityLogin extends AppCompatActivity {
 
     @Override
@@ -38,7 +45,7 @@ public class ActivityLogin extends AppCompatActivity {
             public void onClick(View view) {
                 if(txt_email.getText().toString().equals("") || txt_password.getText().toString().equals("")){
                     Toast.makeText(ActivityLogin.this,
-                            "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_LONG).show();
+                            "please fill all required fields", Toast.LENGTH_LONG).show();
                 }
                 else{
                     if(Patterns.EMAIL_ADDRESS.matcher(txt_email.getText().toString()).matches() && account.selectAccount(txt_email.getText().toString(),txt_password.getText().toString())==true){
@@ -47,6 +54,11 @@ public class ActivityLogin extends AppCompatActivity {
                         Toast.makeText(ActivityLogin.this," Validated Successfully !",Toast.LENGTH_LONG).show();
                         txt_email.setText(null);
                         txt_password.setText(null);
+                        try {
+                            loadQuran();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                         startActivity(IntentMenu);
                     }else {
                         Toast.makeText(ActivityLogin.this," Invalid Email",Toast.LENGTH_LONG).show();
@@ -60,5 +72,39 @@ public class ActivityLogin extends AppCompatActivity {
                 startActivity(IntentCreateAccount);
             }
         });
+    }
+
+    public void loadQuran() throws IOException {
+        try {
+            if(GlobalDeclaration.surahsList.size()==0)
+            {
+                InputStream is =getAssets().open("SurahQuranArabic.json");
+                int size = is.available();
+                byte[] buffer = new byte[size];
+                is.read(buffer);
+                is.close();
+                String json = new String(buffer);
+
+                GlobalDeclaration.data=new JSONObject(json).getJSONObject("data");
+                JSONArray surahs=GlobalDeclaration.data.getJSONArray("surahs");
+
+                for(int i=0;i<114;i++){
+                    int ayahs=surahs.getJSONObject(i).getJSONArray("ayahs").length();
+
+                    Surah o=new Surah(Integer.parseInt(surahs.getJSONObject(i).getString("number")),
+                            ayahs,
+                            surahs.getJSONObject(i).getString("name"),
+                            surahs.getJSONObject(i).getString("englishName"),
+                            surahs.getJSONObject(i).getString("revelationType"));
+
+
+                    GlobalDeclaration.surahsList.add(o);
+                }
+            }
+        }catch (JSONException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

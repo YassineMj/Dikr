@@ -38,12 +38,12 @@ public class ActivityCreateAccount extends AppCompatActivity {
                    || txt_acc_password.getText().toString().equals("") || txt_password_confirmation.getText().toString().equals("") || txt_phone_number.getText().toString().equals("") ){
 
                     Toast.makeText(ActivityCreateAccount.this,
-                            "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_LONG).show();
+                            "please fill all required fields", Toast.LENGTH_LONG).show();
                 }
                 else {
                     if(txt_acc_password.getText().toString().equals(txt_password_confirmation.getText().toString())!=true){
                         Toast.makeText(ActivityCreateAccount.this,
-                                "Error de validation de mot de passe", Toast.LENGTH_LONG).show();
+                                "Password validation error\n", Toast.LENGTH_LONG).show();
                     }
                     else{
                         if((!Patterns.EMAIL_ADDRESS.matcher(txt_acc_email.getText().toString()).matches())){
@@ -52,7 +52,7 @@ public class ActivityCreateAccount extends AppCompatActivity {
                         else {
                             if((validationPassword(txt_acc_password.getText().toString())==false))
                             {
-                                Toast.makeText(ActivityCreateAccount.this," le mot de passe doit contenir au moins 8 caractères et au maximum 12 caractères ",Toast.LENGTH_LONG).show();
+                                Toast.makeText(ActivityCreateAccount.this," the password must contain at least 8 characters and at most 12 characters\n ",Toast.LENGTH_LONG).show();
                             }
                             else {
 
@@ -61,12 +61,12 @@ public class ActivityCreateAccount extends AppCompatActivity {
                                 boolean ajouter=acount.insertAccount(txt_first.getText().toString(),txt_last.getText().toString(),txt_acc_email.getText().toString(),fullPhoneNumber,txt_acc_password.getText().toString());
                                 if(ajouter==true){
                                     Toast.makeText(ActivityCreateAccount.this,
-                                            "compte créé avec succes", Toast.LENGTH_LONG).show();
+                                            "account successfully created\n", Toast.LENGTH_LONG).show();
                                     finish();
                                 }
                                 else {
                                     Toast.makeText(ActivityCreateAccount.this,
-                                            "email deja exist", Toast.LENGTH_LONG).show();
+                                            "email already exists\n", Toast.LENGTH_LONG).show();
                                 }
 
                             }

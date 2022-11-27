@@ -23,4 +23,5 @@ import java.util.List;
 public class GlobalDeclaration {
     public static JSONObject data;
     public static List<Surah> surahsList=new ArrayList<Surah>();
+
 }

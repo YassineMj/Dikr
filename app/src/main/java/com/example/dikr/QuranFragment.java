@@ -24,6 +24,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -86,14 +87,14 @@ public class QuranFragment extends Fragment {
         //Load Quran
         SurahAdapter adapter=new SurahAdapter(getContext(),R.layout.itemsurah,GlobalDeclaration.surahsList);
 
-        //
+        /*API Url
         String url="https://api.alquran.cloud/v1/quran/ar.alafasy";
         JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
                         if(GlobalDeclaration.surahsList.size()==0)
-                        {
+                          {
                             GlobalDeclaration.data=response.getJSONObject("data");
                             JSONArray surahs=GlobalDeclaration.data.getJSONArray("surahs");
 
@@ -143,7 +144,20 @@ public class QuranFragment extends Fragment {
 
             
             Toast.makeText(getContext(),
-                    "Load ...", Toast.LENGTH_LONG).show();
+                    "Load ...", Toast.LENGTH_LONG).show();*/
+
+        //API file.JSON
+        listV_surahs.setAdapter(adapter);
+        //ItemClick
+        listV_surahs.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intentAyahs=new Intent(getContext(), ActivityAyahs.class);
+                intentAyahs.putExtra("itemSurah",i);
+                startActivity(intentAyahs);
+            }
+        });
+
         return v;
     }
 }
